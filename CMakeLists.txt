@@ -40,7 +40,7 @@ endif()
 
 add_subdirectory(ansi)
 add_subdirectory(../mrb mrb)
-#add_subdirectory(../pix pix)
+add_subdirectory(../pix pix)
 
 add_executable(robo src/main.cpp)
-target_link_libraries(robo PRIVATE mrb::mrb ansi)
+target_link_libraries(robo PRIVATE pix mrb::mrb ansi)
